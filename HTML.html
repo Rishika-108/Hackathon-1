@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="welcome-page">
+    <h1>Welcome to Learning with Stories!!!</h1>
+    <img src="Doremon-1.jpg" height="500px" width="1000px">
+    <button onclick="showClasses()">Next</button>
+    
+</div>
+
+<div id="class-selection" style="display: none;">
+    <h2>Select your class:</h2>
+    <img src="doremon-3.png" height="500px" width="800px">
+    <button onclick="showSubjects(5)">Class 5</button>
+    <button onclick="showSubjects(6)">Class 6</button>
+    <button onclick="goToHomepage()">Go To Homepage</button>
+</div>
+
+<div id="subject-selection" style="display: none;">
+    <h2>Select a subject:</h2>
+    <img src="Doremon-2.jpg" height="500px" width="800px">
+    <button onclick="showTopic('Science')">Science</button>
+    <button onclick="showTopic('Maths')">Maths</button>
+    <button onclick="goToHomepage()">Go To Homepage</button>
+</div>
+
+<div id="topic-display" style="display: none;">
+    <h2>Topic:</h2>
+    <p id="topic"></p>
+    <h3>Story:</h3>
+    <p id="story"></p>
+    <button onclick="goToHomepage()">Go To Homepage</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
